@@ -43,8 +43,8 @@ server {
     location ~ \.php$ {
         try_files $uri /index.php =404;
         fastcgi_split_path_info ^(.+\.php)(/.+)$;
-
-        fastcgi_pass   127.0.0.1:9000;
+        fastcgi_pass   unix:/run/php/php5.6-fpm.sock;
+        #fastcgi_pass   127.0.0.1:9000;
         fastcgi_index  index.php;
         fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
         include        fastcgi_params;
