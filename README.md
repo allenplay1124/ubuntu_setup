@@ -13,7 +13,8 @@
 2. 安裝常用工具
 
   ```bash
-  sudo apt-get -y install wget curl build-essential openssl libssl-dev
+  sudo apt-get install -y wget curl build-essential openssl libssl-dev    
+  sudo apt-get install -y libcurl4-gnutls-dev libexpat1-dev gettext libz-dev
   sudo apt-get install -y software-properties-common
   sudo apt-get install -y  python g++ make
   sudo apt-get install -y python-software-properties
@@ -56,7 +57,45 @@
   sudo add-apt-repository -y ppa:ondrej/php
   sudo apt-get update
 
-  apt-get install -y php7.0 php7.0-fpm libapache2-mod-php7.0 php7.0 php7.0-common php7.0-gd php7.0-mysql php7.0-cli php7.0-mcrypt php7.0-curl php7.0-intl php7.0-xsl php7.0-mbstring php7.0-zip php7.0-bcmath
+  sudo apt-get install -y php7.0 php7.0-fpm libapache2-mod-php7.0 php7.0 php7.0-common php7.0-gd php7.0-mysql php7.0-cli php7.0-mcrypt php7.0-curl php7.0-intl php7.0-xsl php7.0-mbstring php7.0-zip php7.0-bcmath
 
-  apt-get install -y php5.6 php5.6-fpm php5.6-common php5.6-mcrypt php5.6-gmp php5.6-curl php5.6-cli php5.6-mysql php5.6-gd php5.6-intl php5.6-xsl php5.6-mbstring php5.6-xml
+  sudo apt-get install -y php5.6 php5.6-fpm php5.6-common php5.6-mcrypt php5.6-gmp php5.6-curl php5.6-cli php5.6-mysql php5.6-gd php5.6-intl php5.6-xsl php5.6-mbstring php5.6-xml
+
+  sudo apt-get install -y php-mongodb php-redis php-geoip php-memcache
+
+  sudo service php5.6-fpm start
+  sudo service php7.0-fpm start
+  ```
+
+  修改 `cli` 預設的 php 版本
+
+  ```bash
+  sudo update-alternatives --set php /usr/bin/php5.6
+  sudo update-alternatives --set php /usr/bin/php7.0
+  ```
+
+7. 安裝 git
+
+  ```bash
+  sudo add-apt-repository ppa:git-core/ppa
+  sudo apt-get update
+  sudo apt-get install git
+  ```
+
+8. 安裝 nodejs
+
+  ```bash
+  ## 安裝 nvm
+  curl https://raw.githubusercontent.com/creationix/nvm/v0.16.1/install.sh | sh
+  ## 更新環境變數
+  source ~/.profile
+  ## 查詢可安裝的版本號
+  nvm ls-remote
+
+  ## 安裝 nodejs、npm
+  nvm install v8.6.0
+
+  ## 查詢 nodejs、npm 版本號
+  node -v
+  npm -v
   ```
