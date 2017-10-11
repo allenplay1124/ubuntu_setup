@@ -56,13 +56,13 @@
   ```bash
   sudo add-apt-repository -y ppa:ondrej/php
   sudo apt-get update
-
+  ## 安裝 php70
   sudo apt-get install -y php7.0 php7.0-fpm libapache2-mod-php7.0 php7.0 php7.0-common php7.0-gd php7.0-mysql php7.0-cli php7.0-mcrypt php7.0-curl php7.0-intl php7.0-xsl php7.0-mbstring php7.0-zip php7.0-bcmath
-
+  ## 安裝 php56
   sudo apt-get install -y php5.6 php5.6-fpm php5.6-common php5.6-mcrypt php5.6-gmp php5.6-curl php5.6-cli php5.6-mysql php5.6-gd php5.6-intl php5.6-xsl php5.6-mbstring php5.6-xml
 
   sudo apt-get install -y php-mongodb php-redis php-geoip php-memcache
-
+  ## 啟用服務
   sudo service php5.6-fpm start
   sudo service php7.0-fpm start
   ```
@@ -82,7 +82,7 @@
   sudo apt-get install git
   ```
 
-8. 安裝 nodejs
+8. 安裝 nodejs、npm
 
   ```bash
   ## 安裝 nvm
@@ -98,4 +98,21 @@
   ## 查詢 nodejs、npm 版本號
   node -v
   npm -v
+  ```
+
+9. 安裝 yarn
+
+  ```bash
+  ## 安裝
+  sudo npm install -g yarn
+  ## 查看版本
+  yarn -v
+  ```
+
+10. 安裝 gulp
+
+  ```bash
+  sudo npm install -g gulp
+  ## 查看版本
+  gulp -v
   ```
