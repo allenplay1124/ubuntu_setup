@@ -77,7 +77,7 @@
 7. 安裝 git
 
   ```bash
-  sudo add-apt-repository ppa:git-core/ppa
+  sudo add-apt-repository ppa:git-core/candidate
   sudo apt-get update
   sudo apt-get install git
   ```
