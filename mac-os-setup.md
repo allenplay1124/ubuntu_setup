@@ -6,19 +6,17 @@
 
 `homebrew` 是 Mac OS 套件管理包，與 `CentOS` 的 `yum` 或 `Ubuntu` 的 `apt` 功能相同。
 
-### `homebrew` 安裝前需要先裝裝 xcode
-
+* `homebrew` 安裝前需要先裝裝 xcode
 ```bash
 xcode-select --install
 ```
 
-### `homebrew` 安裝
-
+* `homebrew` 安裝
 ```bash
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-### `nginx` 安裝
+## `nginx` 安裝
 
 * 安裝指令
 ```bash
@@ -29,7 +27,7 @@ brew install nginx
 brew services start nginx
 ```
 
-### `mariadb` 安裝
+## `mariadb` 安裝
 
 * 安裝指令
 ```bash
@@ -56,7 +54,7 @@ mysql_secure_installation
 
 * 推薦 Mysql Client [Sequel Pro](https://www.sequelpro.com/)
 
-### `php` 安裝
+## `php` 安裝
 
 * 安裝 php7.1
 ```bash
@@ -71,7 +69,7 @@ brew install php@7.0
 brew install php@5.6
 ```
 
-### php版本切換
+## php版本切換
 * 安裝`brew-php-switcher`
 ```bash
 brew install brew-php-switcher
@@ -82,7 +80,7 @@ brew-php-switcher (版本號)
 ```
 ***P.S必需有安裝相應的版本，才能切換***
 
-### brew services
+## brew services
 
 * 查詢所有務狀態
 ```bash
@@ -112,4 +110,23 @@ brew services stop (服務名稱)
 * 重啟服務
 ```bash
 brew services restart (服務名稱)
+```
+
+## 安裝 `Node.js`
+
+* 安裝指令
+```bash
+brew install node
+```
+
+## 安裝 `composer`
+
+* 安裝指令
+```bash
+brew install composer
+```
+
+## 安裝 `yarn`
+```bash
+brew install yarn
 ```
