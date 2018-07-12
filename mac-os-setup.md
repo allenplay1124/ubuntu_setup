@@ -80,4 +80,36 @@ brew install brew-php-switcher
 ```bash
 brew-php-switcher (版本號)
 ```
-***P.S必需有安裝相應的版本，才能切換*** 
+***P.S必需有安裝相應的版本，才能切換***
+
+### brew services
+
+* 查詢所有務狀態
+```bash
+brew services list
+```
+顯示如下：
+```bash
+Name    Status  User   Plist
+mariadb started jailin /Users/jailin/Library/LaunchAgents/homebrew.mxcl.mariadb.plist
+nginx   started jailin /Users/jailin/Library/LaunchAgents/homebrew.mxcl.nginx.plist
+php     stopped        
+php@5.6 stopped        
+php@7.0 stopped        
+php@7.1 started jailin /Users/jailin/Library/LaunchAgents/homebrew.mxcl.php@7.1.plist
+```
+
+* 開啟服務
+```bash
+brew services start (服務名稱)
+```
+
+* 停止服務
+```bash
+brew services stop (服務名稱)
+```
+
+* 重啟服務
+```bash
+brew services restart (服務名稱)
+```
