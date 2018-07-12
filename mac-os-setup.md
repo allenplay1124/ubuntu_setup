@@ -29,11 +29,11 @@ brew install nginx
 brew services start nginx
 ```
 
-### `mysql` 安裝
+### `mariadb` 安裝
 
 * 安裝指令
 ```bash
-brew install mysql
+brew install maraidb
 ```
 * 啟用指令
 ```bash
@@ -53,4 +53,31 @@ mysql_secure_installation
   - 刪除 `test` 資料庫
   - 刪除 `root` 遠端連線的權限
 
+
 * 推薦 Mysql Client [Sequel Pro](https://www.sequelpro.com/)
+
+### `php` 安裝
+
+* 安裝 php7.1
+```bash
+brew install php@7.1
+```
+* 安裝 php7.0
+```bash
+brew install php@7.0
+```
+* 安裝 php5.6
+```bash
+brew install php@5.6
+```
+
+### php版本切換
+* 安裝`brew-php-switcher`
+```bash
+brew install brew-php-switcher
+```
+* 版本切換
+```bash
+brew-php-switcher (版本號)
+```
+***P.S必需有安裝相應的版本，才能切換*** 
