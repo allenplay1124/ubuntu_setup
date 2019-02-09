@@ -35,7 +35,7 @@ brew install maraidb
 ```
 * 啟用指令
 ```bash
-brew serices start mysql
+brew services start mysql
 ```
 * 設定 mysql root 密碼
 ```bash
